@@ -2,6 +2,91 @@
 
 * {
   box-sizing: border-box;
+
 }
 
+
 /* TODO */
+main{
+  width: 85%;
+  margin: 0 auto;
+  
+}
+.movies{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+}
+
+.movies  .col-sm-3 .col-md-3 {
+  margin: 5px;
+}
+
+.movies  .col-sm-3  .col-md-3 img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+.movies .featured {
+grid-area:  2 / 1 / span 4 / span 6;
+margin: 10px;
+
+}
+
+.movies .featured img{
+  width: 40%;
+  margin-right: 10px;
+
+}
+
+.hidden{
+  display:none;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 220px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 575px) { 
+  .col-sm-3{
+    margin-left: 1.25rem;
+ 
+  }
+ 
+  @media only screen and (min-width: 575px){
+    .col-md-3{
+      margin-left: 2rem;
+    
+    }
+
+    .row > .col,
+  .row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  }
+  
+  
+
+ }
+/*
+@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, sm)){
+  .row > .col,
+  .row > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}*/
+
+
